@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A8284B49-3E82-4CF0-B47C-7C7FFD35F3BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyDiploma</RootNamespace>
+    <AssemblyName>MyDiploma</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.108.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.108.0\lib\net451\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreatingDBName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatingDBName.Designer.cs">
+      <DependentUpon>CreatingDBName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreatingNewDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatingNewDB.Designer.cs">
+      <DependentUpon>CreatingNewDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditAddChForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAddChForm.Designer.cs">
+      <DependentUpon>EditAddChForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditTheDirectory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTheDirectory.Designer.cs">
+      <DependentUpon>EditTheDirectory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Directory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Directory.Designer.cs">
+      <DependentUpon>Directory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartWindow.Designer.cs">
+      <DependentUpon>StartWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RenameChapterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RenameChapterForm.Designer.cs">
+      <DependentUpon>RenameChapterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warning1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warning1.Designer.cs">
+      <DependentUpon>Warning1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warning2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warning2.Designer.cs">
+      <DependentUpon>Warning2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warning3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warning3.Designer.cs">
+      <DependentUpon>Warning3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warning4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warning4.Designer.cs">
+      <DependentUpon>Warning4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Warning5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warning5.Designer.cs">
+      <DependentUpon>Warning5.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CreatingDBName.resx">
+      <DependentUpon>CreatingDBName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatingNewDB.resx">
+      <DependentUpon>CreatingNewDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAddChForm.resx">
+      <DependentUpon>EditAddChForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTheDirectory.resx">
+      <DependentUpon>EditTheDirectory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Directory.resx">
+      <DependentUpon>Directory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartWindow.resx">
+      <DependentUpon>StartWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RenameChapterForm.resx">
+      <DependentUpon>RenameChapterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warning1.resx">
+      <DependentUpon>Warning1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warning2.resx">
+      <DependentUpon>Warning2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warning3.resx">
+      <DependentUpon>Warning3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warning4.resx">
+      <DependentUpon>Warning4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warning5.resx">
+      <DependentUpon>Warning5.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.108.0\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.108.0\build\net451\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.108.0\build\net451\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.108.0\build\net451\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
